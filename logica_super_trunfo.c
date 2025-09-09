@@ -9,8 +9,7 @@ float getValor(int atributo, unsigned long int pop, float area, float pib, int p
         case 4: return (float)pontos;
         case 5: return densidade;
         case 6: return percapita;
-        default: return 0; //tratamento de opção inválida
-    }
+        default: return 0; 
 }
 
 int main(){
