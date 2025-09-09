@@ -113,7 +113,7 @@ int main() {
     printf("Pontos Turísticos: Carta 1 venceu (%d)\n", numeroPontosTuristicos1 > numeroPontosTuristicos2);
     printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade1 < densidade2); // menor vence
     printf("PIB per Capita: Carta 1 venceu (%d)\n", PIBperCapita1 > PIBperCapita2);
-    printf("Super Poder: Carta 1 venceu (%d)\n", superPoder1 > superPoder2);
+    printf("Super Poder: Carta 1 venceu (%d)\n", SuperPoder1 > SuperPoder2);
     printf("\n");
 
 
