@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-// ---------------------------
 // Funções recursivas
-// ---------------------------
 
 // Torre: anda N casas para a direita
 void moverTorre(int casas, int atual) {
@@ -31,9 +29,8 @@ void moverBispo(int casas, int atual) {
     moverBispo(casas, atual + 1); // chamada recursiva
 }
 
-// ---------------------------
 // Cavalo com loops complexos
-// ---------------------------
+
 void moverCavalo() {
     int passosCima = 2;
     int passosDireita = 1;
@@ -57,38 +54,33 @@ void moverCavalo() {
     }
 }
 
-// ---------------------------
 // Função principal
-// ---------------------------
+
 int main() {
     int casasTorre = 5;
     int casasBispo = 5;
     int casasRainha = 8;
 
-    // ---------------------------
     // Movimento da Torre (recursão)
-    // ---------------------------
+
     printf("Movimento da Torre:\n");
     moverTorre(casasTorre, 1);
     printf("\n");
 
-    // ---------------------------
     // Movimento do Bispo (recursão + loop interno)
-    // ---------------------------
+
     printf("Movimento do Bispo:\n");
     moverBispo(casasBispo, 1);
     printf("\n");
 
-    // ---------------------------
     // Movimento da Rainha (recursão)
-    // ---------------------------
+  
     printf("Movimento da Rainha:\n");
     moverRainha(casasRainha, 1);
     printf("\n");
 
-    // ---------------------------
     // Movimento do Cavalo (loops complexos)
-    // ---------------------------
+
     moverCavalo();
 
     return 0;
